@@ -1,5 +1,17 @@
 @import 'theme';
 
+// Ensure full height for calendar to work properly
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+app-root {
+  display: block;
+  height: 100%;
+}
+
 .light-theme {
     @include angular-material-theme($angular-material-calendar-demo-theme);
     @include angular-material-calendar($angular-material-calendar-demo-theme);
