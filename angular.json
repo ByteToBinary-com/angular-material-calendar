@@ -60,6 +60,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/angular-material-calendar/",
             "outputPath": "dist/angular-material-calendar-demo",
             "index": "projects/angular-material-calendar-demo/src/index.html",
             "main": "projects/angular-material-calendar-demo/src/main.ts",
@@ -95,8 +96,9 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["dist"]
-              
+              "includePaths": [
+                "dist"
+              ]
             },
             "scripts": []
           },
@@ -120,7 +122,8 @@
                   "with": "projects/angular-material-calendar-demo/src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/angular-material-calendar/"
             },
             "development": {
               "buildOptimizer": false,
@@ -167,8 +170,9 @@
               "projects/angular-material-calendar-demo/src/styles.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["dist"]
-              
+              "includePaths": [
+                "dist"
+              ]
             },
             "scripts": []
           }
@@ -187,6 +191,7 @@
   },
   "defaultProject": "angular-material-calendar",
   "cli": {
+    "analytics": "6ad15f5d-7dda-4d60-bcba-f5a20ca91f29",
     "defaultCollection": "@angular-eslint/schematics"
   }
 }
