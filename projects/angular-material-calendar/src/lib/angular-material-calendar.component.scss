@@ -1,4 +1,21 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
 .calendar-header {
-    display: flex;
-    margin-bottom: .5em;
-  }
+  display: flex;
+  margin-bottom: .5em;
+  flex-shrink: 0;
+}
+
+upbytes-angular-material-calendar-month-view,
+upbytes-angular-material-calendar-week-view,
+upbytes-angular-material-calendar-day-view {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
