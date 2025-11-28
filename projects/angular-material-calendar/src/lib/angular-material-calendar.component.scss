@@ -15,7 +15,9 @@ upbytes-angular-material-calendar-month-view,
 upbytes-angular-material-calendar-week-view,
 upbytes-angular-material-calendar-day-view {
   display: flex;
+  flex-direction: column;
   flex: 1;
   width: 100%;
+  min-height: 0;
   overflow: auto;
 }
