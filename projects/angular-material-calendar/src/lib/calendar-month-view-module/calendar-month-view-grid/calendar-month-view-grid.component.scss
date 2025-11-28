@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  overflow: auto;
+}
+
+mat-grid-list {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// Override Material Grid List default height behavior
+::ng-deep {
+  .mat-grid-list {
+    flex: 1;
+    height: 100%;
+  }
+
+  .mat-grid-tile {
+    box-sizing: border-box;
+  }
+}
