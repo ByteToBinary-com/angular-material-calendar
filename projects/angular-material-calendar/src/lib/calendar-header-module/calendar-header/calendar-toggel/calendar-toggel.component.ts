@@ -12,7 +12,7 @@ import { selectCalendarViewState } from '../../../store';
  * button will switch view in between day/week/month.
  */
 @Component({
-  selector: 'upbytes-angular-material-calendar-toggel',
+  selector: 'app-angular-material-calendar-toggel',
   templateUrl: './calendar-toggel.component.html',
   styleUrls: [
     './calendar-toggel.component.scss'

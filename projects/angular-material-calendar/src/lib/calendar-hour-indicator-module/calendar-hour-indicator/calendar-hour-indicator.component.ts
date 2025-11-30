@@ -11,7 +11,7 @@ const ID = '-hour-indicator';
 const TOP ='5em';
 
 @Component({
-    selector: 'upbytes-angular-material-calendar-hour-indicator',
+    selector: 'app-angular-material-calendar-hour-indicator',
     templateUrl: './calendar-hour-indicator.component.html',
     styleUrls: [
         './calendar-hour-indicator.component.scss'

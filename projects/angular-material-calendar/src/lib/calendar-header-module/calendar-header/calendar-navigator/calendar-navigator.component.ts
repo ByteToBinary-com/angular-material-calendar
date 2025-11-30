@@ -18,7 +18,7 @@ import { selectCalendarDateState, selectCalendarViewState } from '../../../store
  */
 
 @Component({
-  selector: 'upbytes-angular-material-calendar-navigator',
+  selector: 'app-angular-material-calendar-navigator',
   templateUrl: './calendar-navigator.component.html',
   styleUrls: [
     'calendar-navigator.component.scss'

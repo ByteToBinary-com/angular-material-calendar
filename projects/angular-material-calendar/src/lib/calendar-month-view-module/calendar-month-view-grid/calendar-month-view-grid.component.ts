@@ -18,7 +18,7 @@ import { selectCalendarDateState } from '../../store';
  */
 
 @Component({
-  selector: 'upbytes-angular-material-calendar-month-view-grid',
+  selector: 'app-angular-material-calendar-month-view-grid',
   templateUrl: './calendar-month-view-grid.component.html',
   styleUrls: [
     './calendar-month-view-grid.component.scss'

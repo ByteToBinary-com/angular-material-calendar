@@ -11,7 +11,7 @@ import { CalendarViewPortService } from '../../../service/calendar-view-port.ser
  */
 
 @Component({
-    selector: 'upbytes-angular-material-calendar-label',
+    selector: 'app-angular-material-calendar-label',
     templateUrl: './calendar-label.component.html',
 })
 export class CalendarHeaderLabelComponent {

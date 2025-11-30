@@ -8,7 +8,7 @@ import { CalendarEventService } from '../../service/calendar-event.service';
  * calendar event dialog component is used to display event complete data.
  */
 @Component({
-    selector: 'upbytes-angular-material-calendar-event-dialog',
+    selector: 'app-angular-material-calendar-event-dialog',
     templateUrl: 'calendar-event-dialog.component.html',
     styleUrls: ['calendar-event-dialog.component.scss']
 })

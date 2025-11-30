@@ -16,7 +16,7 @@ import { selectCalendarDateState } from '../../store';
  *
  */
 @Component({
-  selector: 'upbytes-angular-material-calendar-week-view-grid',
+  selector: 'app-angular-material-calendar-week-view-grid',
   templateUrl: './calendar-week-view-grid.component.html',
   styleUrls: [
     './calendar-week-view-grid.component.scss'

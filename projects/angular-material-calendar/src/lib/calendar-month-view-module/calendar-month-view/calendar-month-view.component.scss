@@ -5,12 +5,26 @@
   width: 100%;
 }
 
-upbytes-angular-material-calendar-month-view-grid-header {
+app-angular-material-calendar-month-view-grid-header {
   flex-shrink: 0;
   display: block;
 }
 
-upbytes-angular-material-calendar-month-view-grid {
+app-angular-material-calendar-month-view-grid {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+app-angular-material-calendar-month-view-grid-header {
+  flex-shrink: 0;
+  display: block;
+}
+
+app-angular-material-calendar-month-view-grid {
   display: flex;
   flex-direction: column;
   flex: 1;

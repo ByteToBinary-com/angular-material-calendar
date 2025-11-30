@@ -6,8 +6,8 @@
             <div tabindex="0" [ngClass]="tile.key.isToday ? 'calendar-month-view-grid-date-today-text' : ''"
                 class="calendar-month-view-grid-date" 
                 (click)="switchView(tile.key)" (keydown)="switchView(tile.key)">{{tile.key.date}}</div>
-            <upbytes-angular-material-calendar-event-view *ngIf="tile.value.length > 0" tabindex="0" [events]="tile.value">
-            </upbytes-angular-material-calendar-event-view>
+            <app-angular-material-calendar-event-view *ngIf="tile.value.length > 0" tabindex="0" [events]="tile.value">
+            </app-angular-material-calendar-event-view>
             <div tabindex="0" *ngIf="isCountVisible(tile.value)" class="calendar-month-view-grid-footer">
                 +{{tile.value.length}}
             </div>

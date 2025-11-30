@@ -10,7 +10,7 @@ import { selectCalendarDateState } from '../../store';
  * calendar day view header comoponent should be displayed date/weekdaylong and GTM +timezone
  */
 @Component({
-  selector: 'upbytes-angular-material-calendar-day-view-header',
+  selector: 'app-angular-material-calendar-day-view-header',
   templateUrl: './calendar-day-view-header.component.html',
   styleUrls: [
     './calendar-day-view-header.component.scss'

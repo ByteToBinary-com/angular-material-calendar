@@ -28,7 +28,7 @@ export type CalendarEventDataSourceInput<T extends CalendarEvent> =
  * It takes input as array, datasource and observable.
  */
 @Component({
-  selector: 'upbytes-angular-material-calendar',
+  selector: 'app-angular-material-calendar',
   templateUrl: './angular-material-calendar.component.html',
   styleUrls: [
     './angular-material-calendar.component.scss'

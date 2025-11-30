@@ -32,17 +32,17 @@
       <ng-template ngFor let-event
                    [ngForOf]="calendarEventsFull" 
                    let-i="index">
-                   <upbytes-angular-material-calendar-event-full-view class="calendar-full-view"
+                   <app-angular-material-calendar-event-full-view class="calendar-full-view"
                                                               [event]="event">
-                    </upbytes-angular-material-calendar-event-full-view>
+                    </app-angular-material-calendar-event-full-view>
       </ng-template>
       <ng-template ngFor let-event
       [ngForOf]="multipleDayEvents" 
       let-i="index">
-      <upbytes-angular-material-calendar-event-full-view class="calendar-full-view"
+      <app-angular-material-calendar-event-full-view class="calendar-full-view"
                                                  [event]="event">
-       </upbytes-angular-material-calendar-event-full-view>
+       </app-angular-material-calendar-event-full-view>
 </ng-template>
-<upbytes-angular-material-calendar-hour-indicator></upbytes-angular-material-calendar-hour-indicator>
+<app-angular-material-calendar-hour-indicator></app-angular-material-calendar-hour-indicator>
 </mat-grid-list>
 

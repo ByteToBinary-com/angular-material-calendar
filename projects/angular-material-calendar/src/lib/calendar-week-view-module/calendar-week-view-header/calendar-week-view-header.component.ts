@@ -11,7 +11,7 @@ import { selectCalendarDateState } from '../../store';
  * calendar week view header comoponent should be displayed short weekdays name and GTM +timezone
  */
 @Component({
-  selector: 'upbytes-angular-material-calendar-week-view-header',
+  selector: 'app-angular-material-calendar-week-view-header',
   templateUrl: './calendar-week-view-header.component.html',
   styleUrls: [
     './calendar-week-view-header.component.scss'
