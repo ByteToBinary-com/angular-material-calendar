@@ -60,7 +60,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/angular-material-calendar/",
+            "baseHref": "/",
             "outputPath": "dist/angular-material-calendar-demo",
             "index": "projects/angular-material-calendar-demo/src/index.html",
             "main": "projects/angular-material-calendar-demo/src/main.ts",
@@ -123,7 +123,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/angular-material-calendar/"
+              "baseHref": "/"
             },
             "development": {
               "buildOptimizer": false,
