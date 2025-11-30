@@ -10,7 +10,8 @@ import { CalendarEventService } from '../../service/calendar-event.service';
 @Component({
     selector: 'app-angular-material-calendar-event-dialog',
     templateUrl: 'calendar-event-dialog.component.html',
-    styleUrls: ['calendar-event-dialog.component.scss']
+    styleUrls: ['calendar-event-dialog.component.scss'],
+    standalone: false
 })
 export class CalendarEventDialog implements OnInit {
     positionRelativeToElement?: ElementRef;

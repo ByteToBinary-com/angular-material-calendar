@@ -18,11 +18,12 @@ import { selectCalendarDateState, selectCalendarViewState } from '../../../store
  */
 
 @Component({
-  selector: 'app-angular-material-calendar-navigator',
-  templateUrl: './calendar-navigator.component.html',
-  styleUrls: [
-    'calendar-navigator.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-navigator',
+    templateUrl: './calendar-navigator.component.html',
+    styleUrls: [
+        'calendar-navigator.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarNavigatorComponent {
   date$?: Observable<CalendarDate>;

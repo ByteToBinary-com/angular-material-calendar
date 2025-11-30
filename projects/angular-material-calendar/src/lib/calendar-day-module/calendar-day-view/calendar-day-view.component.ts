@@ -3,11 +3,12 @@ import { Observable } from 'rxjs';
 import { CalendarEventInput } from '../../calendar-modal/calendar-event/calendar-event-input';
 
 @Component({
-  selector: 'app-angular-material-calendar-day-view',
-  templateUrl: './calendar-day-view.component.html',
-  styleUrls: [
-    './calendar-day-view.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-day-view',
+    templateUrl: './calendar-day-view.component.html',
+    styleUrls: [
+        './calendar-day-view.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarDayViewComponent {
     @Input() events$?: Observable<CalendarEventInput[]>;

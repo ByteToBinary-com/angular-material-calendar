@@ -10,32 +10,25 @@ import { MaterialModule } from './material-module/material.module';
 import { CalendarDemoHeader } from './header/calendar-demo-header.component';
 import { CalendarDemoSideNav } from './sidenav/calendar-demo-sidenav.component';
 import { CalendarDemoEvents } from './calendar-demo-events/calendar-demo-events.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    CalendarDemoHeader,
-    CalendarDemoSideNav,
-    CalendarDemoEvents
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    StoreModule.forRoot({}),
-    AppRoutingModule,
-    FontAwesomeModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MaterialModule,
-    HttpClientModule,
-    AngularMaterialCalendarModule.forRoot({view: 'month'})
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        CalendarDemoHeader,
+        CalendarDemoSideNav,
+        CalendarDemoEvents
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        BrowserAnimationsModule,
+        StoreModule.forRoot({}),
+        AppRoutingModule,
+        FontAwesomeModule,
+        FormsModule,
+        ReactiveFormsModule,
+        MaterialModule,
+        AngularMaterialCalendarModule.forRoot({ view: 'month' })], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {
   constructor(private library: FaIconLibrary, faconfig: FaConfig) {
     library.addIcons( faStackOverflow, faGithub, faMedium);

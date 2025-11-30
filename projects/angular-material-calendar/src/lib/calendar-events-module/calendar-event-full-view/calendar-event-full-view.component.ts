@@ -17,11 +17,12 @@ const HEIGHT = '5em';
  * calendar event full view component is use to display events on day/week view
  */
 @Component({
-  selector: 'app-angular-material-calendar-event-full-view',
-  templateUrl: './calendar-event-full-view.component.html',
-  styleUrls: [
-    './calendar-event-full-view.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-event-full-view',
+    templateUrl: './calendar-event-full-view.component.html',
+    styleUrls: [
+        './calendar-event-full-view.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarEventFullViewComponent implements OnInit {
   @ViewChild('eventfullview', { read: ElementRef }) public eventfullviewRef?: ElementRef;

@@ -8,7 +8,8 @@ import { MatIconRegistry } from '@angular/material/icon';
     selector: 'calendar-demo-header',
     templateUrl: './calendar-demo-header.component.html',
     styleUrls: ['./calendar-demo-header.component.scss'],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class CalendarDemoHeader {
     themes: CalendarTheme[] = THEMES;

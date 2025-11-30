@@ -16,11 +16,12 @@ import { selectCalendarDateState } from '../../store';
  *
  */
 @Component({
-  selector: 'app-angular-material-calendar-day-view-grid',
-  templateUrl: './calendar-day-view-grid.component.html',
-  styleUrls: [
-    './calendar-day-view-grid.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-day-view-grid',
+    templateUrl: './calendar-day-view-grid.component.html',
+    styleUrls: [
+        './calendar-day-view-grid.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarDayViewGridComponent implements OnInit, AfterViewInit {
   @Input() events$?: Observable<CalendarEventInput[]>;

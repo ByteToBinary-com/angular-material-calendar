@@ -16,11 +16,12 @@ import { selectCalendarDateState } from '../../store';
  *
  */
 @Component({
-  selector: 'app-angular-material-calendar-week-view-grid',
-  templateUrl: './calendar-week-view-grid.component.html',
-  styleUrls: [
-    './calendar-week-view-grid.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-week-view-grid',
+    templateUrl: './calendar-week-view-grid.component.html',
+    styleUrls: [
+        './calendar-week-view-grid.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarWeekViewGridComponent implements OnInit, AfterViewInit {
   @Input() events$?: Observable<CalendarEventInput[]>;

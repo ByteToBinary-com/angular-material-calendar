@@ -7,11 +7,12 @@ import { MonthViewService } from '../service/calendar-month-view.service';
  */
 
 @Component({
-  selector: 'app-angular-material-calendar-month-view-grid-header',
-  templateUrl: './calendar-month-view-grid-header.component.html',
-  styleUrls: [
-    './calendar-month-view-grid-header.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-month-view-grid-header',
+    templateUrl: './calendar-month-view-grid-header.component.html',
+    styleUrls: [
+        './calendar-month-view-grid-header.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarMonthViewGridHeaderComponent {
     dayOfWeekNames?: string[];

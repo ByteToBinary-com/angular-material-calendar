@@ -18,11 +18,12 @@ import { selectCalendarDateState } from '../../store';
  */
 
 @Component({
-  selector: 'app-angular-material-calendar-month-view-grid',
-  templateUrl: './calendar-month-view-grid.component.html',
-  styleUrls: [
-    './calendar-month-view-grid.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-month-view-grid',
+    templateUrl: './calendar-month-view-grid.component.html',
+    styleUrls: [
+        './calendar-month-view-grid.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarMonthViewGridComponent implements OnInit {
   date$?: Observable<CalendarDate>;

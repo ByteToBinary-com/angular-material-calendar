@@ -13,6 +13,7 @@ import { CalendarViewPortService } from '../../../service/calendar-view-port.ser
 @Component({
     selector: 'app-angular-material-calendar-label',
     templateUrl: './calendar-label.component.html',
+    standalone: false
 })
 export class CalendarHeaderLabelComponent {
     date$?: Observable<CalendarDate>;

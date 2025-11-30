@@ -15,7 +15,8 @@ const TOP ='5em';
     templateUrl: './calendar-hour-indicator.component.html',
     styleUrls: [
         './calendar-hour-indicator.component.scss'
-    ]
+    ],
+    standalone: false
 })
 export class CalendarHourIndicatorComponent implements AfterViewInit, OnDestroy {
     @ViewChild('hourindicator', {read: ElementRef }) public hourindicatorRef?: ElementRef;

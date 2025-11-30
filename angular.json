@@ -140,10 +140,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-material-calendar-demo:build:production"
+              "buildTarget": "angular-material-calendar-demo:build:production"
             },
             "development": {
-              "browserTarget": "angular-material-calendar-demo:build:development"
+              "buildTarget": "angular-material-calendar-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -151,7 +151,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-material-calendar-demo:build"
+            "buildTarget": "angular-material-calendar-demo:build"
           }
         },
         "test": {
@@ -189,9 +189,10 @@
       }
     }
   },
-  "defaultProject": "angular-material-calendar",
   "cli": {
     "analytics": "6ad15f5d-7dda-4d60-bcba-f5a20ca91f29",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

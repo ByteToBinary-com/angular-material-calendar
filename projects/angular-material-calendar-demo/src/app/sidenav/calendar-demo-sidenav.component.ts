@@ -7,7 +7,8 @@ import { Event } from '../model/calendar-event';
 @Component({
     selector: 'calendar-demo-sidenav',
     templateUrl: './calendar-demo-sidenav.component.html',
-    styleUrls: ['./calendar-demo-sidenav.component.scss']
+    styleUrls: ['./calendar-demo-sidenav.component.scss'],
+    standalone: false
 })
 export class CalendarDemoSideNav {
 

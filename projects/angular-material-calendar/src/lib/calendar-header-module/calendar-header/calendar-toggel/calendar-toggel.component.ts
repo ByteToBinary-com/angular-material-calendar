@@ -12,11 +12,12 @@ import { selectCalendarViewState } from '../../../store';
  * button will switch view in between day/week/month.
  */
 @Component({
-  selector: 'app-angular-material-calendar-toggel',
-  templateUrl: './calendar-toggel.component.html',
-  styleUrls: [
-    './calendar-toggel.component.scss'
-  ]
+    selector: 'app-angular-material-calendar-toggel',
+    templateUrl: './calendar-toggel.component.html',
+    styleUrls: [
+        './calendar-toggel.component.scss'
+    ],
+    standalone: false
 })
 export class CalendarHeaderToggelComponent {
   _view$?: Observable<CalendarView>;

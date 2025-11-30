@@ -28,11 +28,12 @@ export type CalendarEventDataSourceInput<T extends CalendarEvent> =
  * It takes input as array, datasource and observable.
  */
 @Component({
-  selector: 'app-angular-material-calendar',
-  templateUrl: './angular-material-calendar.component.html',
-  styleUrls: [
-    './angular-material-calendar.component.scss'
-  ]
+    selector: 'app-angular-material-calendar',
+    templateUrl: './angular-material-calendar.component.html',
+    styleUrls: [
+        './angular-material-calendar.component.scss'
+    ],
+    standalone: false
 })
 export class AngularMaterialCalendarComponent<T extends CalendarEvent>
   implements OnInit, AfterContentChecked, OnDestroy, CollectionViewer {
